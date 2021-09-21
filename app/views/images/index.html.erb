@@ -1,1 +1,8 @@
-<h1>This is the view of an image</h1>
+<h1>Images</h1>
+<ul>
+  <% @images.each do |image| %>
+    <li> 
+      <%= image.name %>
+    </li>
+  <% end %>
+</ul>
