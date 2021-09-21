@@ -2,9 +2,7 @@
 <ul>
   <% @images.each do |image| %>
     <li> 
-    <a href="/images/<%= image.id %>">
-      <%= image.name %>
-      </a>
+    <%= link_to image.name, image %>
       <img src=<%= image.path %> width="100px" height="100px" />
     </li>
   <% end %>
